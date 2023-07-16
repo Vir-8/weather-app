@@ -9,12 +9,14 @@
 </head>
 
 <body>
-    <div class="main">
-        <h1 class="header">Weather App</h1>
+    <div class="main" id="background">
+        <div class="header">
+            <h1>Weather App</h1>
+        </div>
     
-        <form action="">
-            <input type="text" name="placeName" id="placeName">
-            <button type="submit" id="submit">Submit</button>
+        <form action="" id="placeForm">
+            <input type="text" name="placeName" id="placeName" placeholder="Enter city name...">
+            <button type="submit" id="submit">Search</button>
         </form>
     
         <div class="display">
@@ -22,9 +24,12 @@
                 <div class="location"> </div>
                 <div class="status">
 
-                    <div class="temperature"> 
-                        <img src="" alt="icon" id="weatherIcon">
-                        <div class="currentTemperature"></div>
+                    <div class="temperatureBox">
+                        <div class="temperature">
+                            <img src="" alt="icon" id="weatherIcon">
+                            <div class="currentTemperature"></div>
+                        </div> 
+                        <div class="feelsLike">Feels like 30c</div>
                     </div>
 
                     <div class="condition">
@@ -33,9 +38,18 @@
                 </div>
 
                 <div class="details">
-                    <div class="humidity">humidity</div>
-                    <div class="precipitation">precipitation</div>
-                    <div class="wind">wind</div>
+                    <div class="humidityBox">
+                        Humidity:
+                        <div class="humidity"></div>
+                    </div>
+                    <div class="precipitationBox">
+                        Precipitation:
+                        <div class="precipitation"></div>
+                    </div>
+                    <div class="windBox">
+                        Wind Speed:
+                        <div class="wind"></div>
+                    </div>
                 </div>
             </div>
         </div>
