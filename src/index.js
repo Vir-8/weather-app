@@ -1,3 +1,4 @@
+import './style.css';
 import { getWeather } from "./modules/weather";
 
 const mainContainer = document.querySelector('.main')
