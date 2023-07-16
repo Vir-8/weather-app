@@ -12,7 +12,8 @@ body {
 }
 
 .header {
-    background-color: #a0a0a07c;
+    background-color: #2e2e2e7c;
+    color: white;
 }
 
 .header h1 {
@@ -162,38 +163,10 @@ body {
     margin: auto;
 }
 
-
-#background.sunny {
-    background-image: linear-gradient(to bottom, #d6d6d6, #f5b132);
-}
-
-/* Cloudy */
-#background.cloudy {
-    background: linear-gradient(to bottom, #B0C4DE, #778899);
-}
-  
-/* Rainy */
-#background.rainy {
-    background: linear-gradient(to bottom, #6495ED, #87CEFA);
-}
-  
-/* Thunderstorm */
-#background.thunderstorm {
-    background: linear-gradient(to bottom, #7B68EE, #b99930);
-}
-  
-/* Snowy */
-#background.snowy {
-    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3);
-}
-  
-  /* Mist */
-#background.mist {
-    background: linear-gradient(180deg, #D3D3D3, #757575);
-}
+/* background colours */
 
 .clear-day {
-    background-color: #F8C471;
+    background-color: #dda131c2;
 }
 
 .clear-night {
@@ -201,7 +174,7 @@ body {
 }
 
 .cloudy-day {
-    background-color: #c2c2c2;
+    background-color: #c2c2c2c0;
 }
   
 .cloudy-night {
@@ -225,15 +198,15 @@ body {
 }
   
 .snowy-day {
-    background-color: #D6EAF8;
+    background-color: #94c1e4e0;
 }
   
 .snowy-night {
-    background-color: #2874A6;
+    background-color: #408abb;
 }
   
 .mist-day {
-    background-color: #89bdee;
+    background-color: #8299af;
 }
   
 .mist-night {
