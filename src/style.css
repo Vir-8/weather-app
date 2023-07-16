@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #505050;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    padding: 5px;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.temperature {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+}
+
+.currentTemperature {
+    font-size: 50px;
+}
+
+#weatherIcon {
+    position: relative;
+    animation-name: levitate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+  
+@keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.condition {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.humidity {
+    grid-column: 1/2;
+}
+
+.precipitation {
+    grid-column: 2/3;
+}
+
+.wind {
+    grid-column: 3/4;
+}
