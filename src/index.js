@@ -28,4 +28,4 @@ submit.onclick = function(e) {
     e.preventDefault();
 }
 
-export { weatherBox, currentTemperatureBox, locationBox, weatherIcon, conditionBox, windBox, precBox, humidityBox, mainContainer, feelsLike };
+export { weatherBox, currentTemperatureBox, locationBox, weatherIcon, conditionBox, windBox, precBox, humidityBox, mainContainer, feelsLike, place };

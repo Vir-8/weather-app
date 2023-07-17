@@ -1,4 +1,5 @@
 import { displayWeather } from "./display";
+import { place } from "..";
 
 export async function getWeather(placeName) { 
   try {
@@ -25,5 +26,7 @@ export async function getWeather(placeName) {
 
   } catch (error) {
     console.log('Error fetching weather data:', error);
+    place.setCustomValidity("Error: Invalid place name.\xA0\n Make sure the spelling is correct and try again!");
+    place.reportValidity();
   }
 }
